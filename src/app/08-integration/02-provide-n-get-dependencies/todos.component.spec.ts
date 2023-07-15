@@ -46,7 +46,7 @@ describe('TodosComponent', () => {
 		expect(component.todos.length).toBe(3);
 	});*/
 	// FOR PROMISE
-	it('should load todos from the server', fakeAsync(/*async*/ () => {
+	it('should load todos from the server', fakeAsync(/*async*/() => {
 		const service = TestBed.inject(TodoService);
 		// fixture.debugElement.injector.get(TodoService); // - for cases when dependencies aren't provided
 		spyOn(service, 'getTodosPromise').and.returnValue(
@@ -60,6 +60,7 @@ describe('TodosComponent', () => {
 		// WITH FAKEASYNC
 		tick();
 
+		console.log("EXPECT was called");
 		expect(component.todos.length).toBe(3);
 	}));
 });

@@ -6,15 +6,15 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { TodosComponent } from './2-todos/todos.component';
-import { UserDetailsComponent } from './3-user-details/user-details.component';
-import { VoterComponent } from './1-voter/voter.component';
+import { TodosComponent } from './02-provide-n-get-dependencies/todos.component';
+import { UserDetailsComponent } from './03-router-stub-route-param-testing/user-details.component';
+import { VoterComponent } from './01-property-n-event-binding/voter.component';
 
 import { routes } from './app.routes';
 import { UsersComponent } from './users/users.component';
 // import { NavComponent } from './nav/nav.component';
 import { HighlightDirective } from './highlight.directive';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './router-link-test/nav.component';
 
 @NgModule({
 	declarations: [
@@ -37,4 +37,4 @@ import { NavComponent } from './nav/nav.component';
 	providers: [],
 	bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
